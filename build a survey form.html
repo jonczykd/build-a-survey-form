@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet"/>
+    <title>Newsletter Survey</title>
+  <meta charset="UTF-8">
+  </head>  
+  <body>
+    <h1 id="title">NEWSLETTER SURVEY</h1>
+    
+    <h2><i>Thank you for choosing our newsletter!</i></h2>
+    <div class="container">
+      <p id="description"></p>Take a while to fill this form</p>
+      <form action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label id="name-label">Your Name: <input type="text" id="name" placeholder="Your Name" required></label>
+        <label id="email-label">Your e-mail adress: <input type="email" id="email" placeholder="Your e-mail adress" required></label>
+      <label id="number-label">Your age: (optional)<input type="number" id="number" min="18" max="120" value="Age" placeholder="Your Age"></label> 
+     <fieldset>
+       <label>I am:</label>
+       <label><input type="radio" name="pro-student" class="inline" value="pro"  required checked>a professional</label>
+       <label><input type="radio" name="pro-student" class="inline" value="student"  required>a student</label>
+       <label><input type="radio" name="pro-student" class="inline" value="passionate" required>a passionate</label>
+       </fieldset>
+      <fieldset>
+        <label>How did you hear about us?</label>
+          <select id="dropdown">
+           <option value="">choose one...</option>  
+           <option value="2">Advertising</option>
+           <option value="3">YouTube channel</option>
+           <option value="4">A friend</option>
+         </select>
+         <label>Other:</label>
+         <textarea id="textarea" rows="2" cols="30" placeholder="Other..."></textarea>
+       </fieldset>
+       <fieldset>
+         <label>How many times per week you want to hear from us? (we won't spam, promise)</label>
+              <select id="dropdown">
+         <option value="">choose your option</option>  
+         <option value="1">Everyday!</option>
+        <option value="2">3-5 times per week</option>
+         <option value="3">2-3 times per week</option>
+        <option value="4">One time per week</option>
+        </select>
+       </fieldset>
+       <fieldset>
+         <label>About which topics you want to hear from us the most (you can choose many)?</label>
+          <label><input type="checkbox" id="topics" class="inline" value="news" required>News</label>
+          <label><input type="checkbox" id="topics" class="inline" value="premieres" required>Upcoming premieres</label>
+          <label><input type="checkbox" id="topics" class="inline" value="events" required>Upcoming events</label>
+          <label><input type="checkbox" id="topics" class="inline" value="sales" required>Tech sales</label>
+          <label><input type="checkbox" id="topics" class="inline" value="webinars" required>Webinars</label>
+         <label><input type="checkbox" id="topics" class="inline" value="materials" required>Educational materials</label>
+      </fieldset>
+      <label>Is there anything you want us to hear?
+          <textarea id="textarea" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+      <fieldset>
+       <input type="submit" id="submit" value="Submit"/>
+        </form>
+      </div>
+      <footer>
+        <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> <i>Build a Survey Form</i> project by <b><a href="https://github.com/jonczykd" target="_blank">Dominik Jończyk</a></b>
+      </footer>
+
+     </body>
+  </html>
